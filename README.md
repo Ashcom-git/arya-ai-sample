@@ -13,3 +13,11 @@ Since not all features are of the same scale and so we must standardize the valu
 
 ![image](https://user-images.githubusercontent.com/83799967/135745400-f64cd8ae-c225-4342-8951-7d20fa4ba75c.png)
 
+The value of m and n represent the dimensions of the data matrix. ![image](https://user-images.githubusercontent.com/83799967/135746036-a9286700-08a2-4157-b912-0d51eda6e15c.png) is an approximation used when the noise level ![image](https://user-images.githubusercontent.com/83799967/135745696-cd0024ab-8b44-4b28-a22a-4fdf5e75bbb5.png) is unknown. ![image](https://user-images.githubusercontent.com/83799967/135745735-e5480724-4c1f-4b79-a2d6-839cacf4f2a3.png) represents the median of the singular values given in the central matrix and ![image](https://user-images.githubusercontent.com/83799967/135745876-20e5dca0-89dc-4b92-a817-10728c7d049f.png) represents the threshold value. We find the optimal value to be 3. This means that three features can represent the entire data matrix. 
+
+## Machine learning
+Gradient boosted decision trees is a good machine learning algorithm that can efficiently capture the underlying pattern of the data. That's why we will be using it for the training and prediction purpose. The best parameters are obtained using randomized search cross validation. The entire data set is divided into 4 folds for this purpose. As required, accuracy is the performance metric used for scoring. With the maximum decision tree depth as 5 and the number of estimators as 110, we are able to clock the accuracy value of 0.877. We'll now use these parameters to predict the test data.
+
+
+
+
